@@ -33,5 +33,6 @@ when "rhel"
     gpgkey node["percona"]["yum"]["gpgkey"]
     gpgcheck node["percona"]["yum"]["gpgcheck"]
     sslverify node["percona"]["yum"]["sslverify"]
+    proxy node["percona"]["yum"]["proxy"] if node["percona"]["yum"]["proxy"]
   end
 end
